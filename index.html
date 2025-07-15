@@ -2,41 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Fragments of Flight</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fragments of Flight – Demo Preview</title>
   <style>
     body {
-      background: #0f0f0f;
-      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top, #0d0d0d, #1a1a1a);
+      color: #fff;
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      padding: 2rem;
+    }
+    .container {
+      margin-top: 10vh;
     }
     h1 {
-      font-weight: 400;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-    video {
-      margin-top: 20px;
-      max-width: 90%;
-      border: 2px solid #444;
-      border-radius: 8px;
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
     .quote {
+      margin-top: 2rem;
       font-style: italic;
-      margin-top: 1.5rem;
-      color: #ccc;
+      color: #aaa;
+    }
+    video {
+      margin-top: 3rem;
+      width: 80%;
+      max-width: 720px;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-  <h1>Fragments of Flight – Demo</h1>
-  <div class="quote">
-    “Brilliance comes from obsession.<br>
-    If I do not have the resolve to work until I collapse,<br>
-    then perhaps I never truly chose this path.”
+  <div class="container">
+    <h1>Fragments of Flight – Demo Preview</h1>
+    <p>Poetic Preview – Zone 1</p>
+    
+    <!-- Quote -->
+    <div class="quote">“Let the wind carry you.”</div>
+
+    <!-- Video Preview -->
+    <video controls autoplay muted loop>
+      <source src="demo_video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   </div>
-  <video controls>
-    <source src="demo_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/0y0eqr.mp3" type="audio/mpeg" />
+    Your browser does not support the audio tag.
+  </audio>
 </body>
 </html>
